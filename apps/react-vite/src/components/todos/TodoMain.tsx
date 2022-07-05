@@ -24,7 +24,9 @@ const TodoMain = TodosContainer.toWrappedComponent(({ actions, selected }) => {
     
     
     useEffect(() => {
-      updateTodoState()
+      setTimeout(() => {
+        updateTodoState()
+      }, 0)
     }, [])
 
     return (

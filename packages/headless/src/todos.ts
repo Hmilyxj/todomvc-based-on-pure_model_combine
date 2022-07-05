@@ -9,9 +9,9 @@ export type Todo = {
 
 export type Todos = Todo[];
 
-// const initialState: Todos = []
-const data = localStorage.getItem('todoState')
-const initialState = (data && JSON.parse(data)) || []
+const initialState: Todos = []
+// const data = localStorage.getItem('todoState')
+// const initialState = (data && JSON.parse(data)) || []
 
 export default function TodosInitializer () {
   const { store, actions } = setupStore({
